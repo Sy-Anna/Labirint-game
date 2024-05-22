@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Settings" Height="280" Width="500">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Margin="43,34,0,0" TextWrapping="Wrap" Text="Téma" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Margin="43,34,0,0" TextWrapping="Wrap" Text="Téma" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Margin="43,125,0,0" TextWrapping="Wrap" Text="Játék mód" VerticalAlignment="Top" Width="120"/>
         <Button Content="Start" HorizontalAlignment="Left" Margin="189,193,0,0" VerticalAlignment="Top" Height="41" Width="105"/>
         <RadioButton x:Name="lightThemeRdb" Content="Világos" HorizontalAlignment="Left" Margin="198,34,0,0" VerticalAlignment="Top"/>
