@@ -28,5 +28,12 @@ namespace Labirint_game
 			this.Hide();
 			settings.Show();
 		}
+
+		private void startBtn_Click(object sender, RoutedEventArgs e)
+		{
+			Game game = new Game();
+			this.Hide();
+			game.Show();	
+		}
 	}
 }

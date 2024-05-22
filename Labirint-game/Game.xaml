@@ -7,7 +7,10 @@
         mc:Ignorable="d"
         Title="Game" Height="450" Width="800">
     <Grid>
-        <Button x:Name="inGameSettingsBtn" Content="Beállítások" HorizontalAlignment="Left" Margin="672,381,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.279,0.764" Height="32" Width="95" Click="inGameSettingsBtn_Click"/>
+        <Button x:Name="inGameMainBtn" Content="Vissza a kezdőlapra" HorizontalAlignment="Left" Margin="651,348,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.279,0.764" Height="32" Width="95" Click="inGameSettingsBtn_Click"/>
+        <Label x:Name="themeLbl" Content="Téma:" HorizontalAlignment="Left" Margin="75,364,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="backgroundLbl" Content="Háttér:" HorizontalAlignment="Left" Margin="152,364,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="gamemodeLbl" Content="Játékmód:" HorizontalAlignment="Left" Margin="244,364,0,0" VerticalAlignment="Top"/>
 
 
     </Grid>

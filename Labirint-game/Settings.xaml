@@ -9,14 +9,14 @@
     <Grid>
         <TextBox HorizontalAlignment="Left" Margin="43,34,0,0" TextWrapping="Wrap" Text="Téma" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Margin="43,125,0,0" TextWrapping="Wrap" Text="Játék mód" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Start" HorizontalAlignment="Left" Margin="189,193,0,0" VerticalAlignment="Top" Height="41" Width="105"/>
-        <RadioButton x:Name="lightThemeRdb" Content="Világos" HorizontalAlignment="Left" Margin="198,34,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="darkThemeRdb" Content="Sötét" HorizontalAlignment="Left" Margin="305,34,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="Spongyabob" HorizontalAlignment="Left" Margin="198,73,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="Csillagok" HorizontalAlignment="Left" Margin="389,73,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="Téglafal" HorizontalAlignment="Left" Margin="305,73,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="Túlélő" HorizontalAlignment="Left" Margin="192,128,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="God mode" HorizontalAlignment="Left" Margin="305,128,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="inSettingsStartBtn" Content="Start" HorizontalAlignment="Left" Margin="189,193,0,0" VerticalAlignment="Top" Height="41" Width="105" Click="inSettingsStartBtn_Click"/>
+        <RadioButton x:Name="lightThemeRdb" GroupName="theme" Content="Világos" HorizontalAlignment="Left" Margin="198,34,0,0" VerticalAlignment="Top" Checked="lightThemeRdb_Checked"/>
+        <RadioButton x:Name="darkThemeRdb" GroupName="theme" Content="Sötét" HorizontalAlignment="Left" Margin="305,34,0,0" VerticalAlignment="Top" Checked="darkThemeRdb_Checked"/>
+        <RadioButton x:Name="SpongeBobRdb" Content="Spongyabob" GroupName="backgroundTheme" HorizontalAlignment="Left" Margin="198,73,0,0" VerticalAlignment="Top" Checked="SpongeBobRdb_Checked"/>
+        <RadioButton x:Name="starsRdb" Content="Csillagok" GroupName="backgroundTheme" HorizontalAlignment="Left" Margin="389,73,0,0" VerticalAlignment="Top" Checked="starsRdb_Checked"/>
+        <RadioButton x:Name="brickWallRdb" Content="Téglafal" GroupName="backgroundTheme" HorizontalAlignment="Left" Margin="305,73,0,0" VerticalAlignment="Top" Checked="brickWallRdb_Checked"/>
+        <RadioButton x:Name="survivalRdb" Content="Túlélő" GroupName="gamemode" HorizontalAlignment="Left" Margin="192,128,0,0" VerticalAlignment="Top" Checked="survivalRdb_Checked"/>
+        <RadioButton x:Name="godModeRdb" Content="God mode" GroupName="gamemode" HorizontalAlignment="Left" Margin="305,128,0,0" VerticalAlignment="Top" Checked="godModeRdb_Checked"/>
 
     </Grid>
 </Window>

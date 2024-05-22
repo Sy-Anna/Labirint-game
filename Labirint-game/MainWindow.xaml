@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="startBtn" Content="Start" HorizontalAlignment="Left" Margin="294,186,0,0" VerticalAlignment="Top" Height="69" Width="196" Click="Button_Click"/>
-        <Button x:Name="settingsBtn" Content="Beállítások" HorizontalAlignment="Left" Margin="672,381,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.279,0.764" Click="settingsBtn_Click" Height="32" Width="95"/>
+        <Button x:Name="startBtn" Content="Start" HorizontalAlignment="Left" Margin="294,186,0,0" VerticalAlignment="Top" Height="69" Width="196" Click="startBtn_Click"/>
+        <Button x:Name="settingsBtn" Content="Beállítások" HorizontalAlignment="Left" Margin="651,348,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.279,0.764" Click="settingsBtn_Click" Height="32" Width="95"/>
 
     </Grid>
 </Window>

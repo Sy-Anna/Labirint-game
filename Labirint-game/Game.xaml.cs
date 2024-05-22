@@ -19,9 +19,15 @@ namespace Labirint_game
 	/// </summary>
 	public partial class Game : Window
 	{
-		public Game()
+		string theme;
+		string background;
+		string gamemode;
+		public Game(string tm, string bg, string gm)
 		{
 			InitializeComponent();
+			theme = tm;
+			background = bg;
+			gamemode = gm;
 		}
 
 		private void inGameSettingsBtn_Click(object sender, RoutedEventArgs e)
@@ -29,6 +35,41 @@ namespace Labirint_game
 			MainWindow mainWindow = new MainWindow();
 			this.Hide();
 			mainWindow.Show();
+			showProperities();
+		}
+
+		private void showProperities()
+		{
+			switch (theme)
+			{
+				case "light":
+					themeLbl.Content = "Téma: Világos";
+					break;
+				case "dark":
+					themeLbl.Content = "Téma: Sötét";
+					break;
+			}
+			switch (background)
+			{
+				case "SpongeBob":
+					backgroundLbl.Content = "Háttér: Spongyabob";
+					break;
+				case "brickWall":
+					backgroundLbl.Content = "Háttér: Téglafal";
+					break;
+				case "star":
+					backgroundLbl.Content = "Háttér: Csillagok";
+					break;
+			}
+			switch (gamemode)
+			{
+				case "survival":
+					gamemodeLbl.Content = "Játékmód: Túlélő";
+					break;
+				case "godMode":
+					gamemodeLbl.Content = "Játékmód: God mode";
+					break;
+			}
 		}
 	}
 }
